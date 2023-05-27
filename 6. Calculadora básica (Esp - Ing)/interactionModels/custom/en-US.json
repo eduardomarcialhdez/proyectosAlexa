@@ -1,0 +1,329 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "basic calculator",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "OperacionSumaIntent",
+          "slots": [
+            {
+              "name": "valorA",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{valorA}"
+              ]
+            },
+            {
+              "name": "valorB",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{valorB}"
+              ]
+            }
+          ],
+          "samples": [
+            "Add {valorA} and {valorB}",
+            "Add {valorA} to {valorB}",
+            "Tell me how much is {valorA} plus {valorB}",
+            "Add {valorA} plus {valorB}",
+            "What is the result of adding {valorA} and {valorB}",
+            "{valorA} plus {valorB}"
+          ]
+        },
+        {
+          "name": "OperacionRestaIntent",
+          "slots": [
+            {
+              "name": "valorA",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{valorA}"
+              ]
+            },
+            {
+              "name": "valorB",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{valorB}"
+              ]
+            }
+          ],
+          "samples": [
+            "{valorA} minus {valorB}",
+            "How much is {valorA} minus {valorB}",
+            "Subtract {valorB} from {valorA} ",
+            "What is the result of subtracting {valorB} from {valorA}"
+          ]
+        },
+        {
+          "name": "OperacionMultiplicacionIntent",
+          "slots": [
+            {
+              "name": "valorA",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{valorA}"
+              ]
+            },
+            {
+              "name": "valorB",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{valorB}"
+              ]
+            }
+          ],
+          "samples": [
+            "Tell me the result of {valorA} times {valorB}",
+            "{valorA} times {valorB}",
+            "How much is {valorA} times {valorB}",
+            "Multiply {valorA} by {valorB}"
+          ]
+        },
+        {
+          "name": "OperacionDivisionIntent",
+          "slots": [
+            {
+              "name": "valorA",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{valorA}"
+              ]
+            },
+            {
+              "name": "valorB",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{valorB}"
+              ]
+            }
+          ],
+          "samples": [
+            "The result of dividing {valorA} by {valorB} ",
+            "Divide {valorA} by {valorB} ",
+            "{valorA} divided by {valorB} ",
+            "How much is {valorA} divided by {valorB}",
+            "Split {valorA} between {valorB} "
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "OperacionSumaIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "valorA",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.93875775313.313319152639"
+              }
+            },
+            {
+              "name": "valorB",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.93875775313.470870094452"
+              }
+            }
+          ]
+        },
+        {
+          "name": "OperacionRestaIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "valorA",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1373366189751.524715934935"
+              }
+            },
+            {
+              "name": "valorB",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1373366189751.642559985"
+              }
+            }
+          ]
+        },
+        {
+          "name": "OperacionMultiplicacionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "valorA",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.622136855796.901458367986"
+              }
+            },
+            {
+              "name": "valorB",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.622136855796.1478410604746"
+              }
+            }
+          ]
+        },
+        {
+          "name": "OperacionDivisionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "valorA",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1642764318429.377791865475"
+              }
+            },
+            {
+              "name": "valorB",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1642764318429.1377992605993"
+              },
+              "validations": [
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.1642764318429.1377992605993.1570216803780",
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.93875775313.313319152639",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please add a value to complete the sum"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.93875775313.470870094452",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please add a value to complete the sum"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1373366189751.524715934935",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please add a value to complete the subtraction"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1373366189751.642559985",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please add a value to complete the subtraction"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.622136855796.901458367986",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please add a value to complete the multiplication"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.622136855796.1478410604746",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please add a value to complete the multiplication"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1642764318429.377791865475",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please add a value to divide"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1642764318429.1377992605993.1570216803780",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please, that the value by which you are going to divide is not zero"
+          },
+          {
+            "type": "PlainText",
+            "value": "imagine that you have {valorA} apples and you want to distribute them among zero friends, it does not make sense"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1642764318429.1377992605993",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please add the value by which to divide"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "1"
+}

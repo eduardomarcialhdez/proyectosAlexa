@@ -1,0 +1,86 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "es-MX": {
+          "summary": "Descubre curiosidades",
+          "examplePhrases": [
+            "Alexa, abre curiosidades de programación",
+            "cuenta un dato curioso de java",
+            "cuenta un dato curioso de Python"
+          ],
+          "keywords": [
+            "curiosidades",
+            "programación",
+            "lenguajes",
+            "lenguajes",
+            "de",
+            "programación"
+          ],
+          "name": "Curiosidades de Programación",
+          "description": "Descubre las curiosidades del asombroso mundo de la programación",
+          "smallIconUri": "file://assets/images/es-MX_smallIconUri.png",
+          "updatesDescription": "Practica estudiantil",
+          "largeIconUri": "file://assets/images/es-MX_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [
+          {
+            "sourceLocale": "es-MX",
+            "language": "es"
+          }
+        ],
+        "isActive": true
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "{\"ask_dist_username\":\"\",\"ask_dist_password\":\"\",\"ask_dist_testing_instructions\":\"Alexa abre curiosidades de programación\\ncuenta un dato curioso de python\"}",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": [
+        "MX"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:867341492196:function:8b60527c-b332-4148-bb8c-c84e8b4f8347:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:867341492196:function:8b60527c-b332-4148-bb8c-c84e8b4f8347:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:867341492196:function:8b60527c-b332-4148-bb8c-c84e8b4f8347:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:867341492196:function:8b60527c-b332-4148-bb8c-c84e8b4f8347:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "es-MX": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}

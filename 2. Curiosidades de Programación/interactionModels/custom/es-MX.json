@@ -1,0 +1,113 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "curiosidades de programacion",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "como puedo usar esta skill",
+            "como puedo usar",
+            "Que hace esta skill",
+            "Qué puedes hacer",
+            "Ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "cierra la skill curiosidades de programación",
+            "cerrar",
+            "adiós",
+            "cierra la app",
+            "cierra app",
+            "cierra la skill",
+            "cierra skill",
+            "cierra curiosidades de programación",
+            "adios",
+            "hasta luego"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CustomLanguageIntent",
+          "slots": [
+            {
+              "name": "language",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{language}"
+              ]
+            }
+          ],
+          "samples": [
+            "cuenta un dato curioso de {language}",
+            "cuenta un dato curioso sobre {language}",
+            "cuenta algo acerca de {language}",
+            "cuentame algo acerca de {language}",
+            "da me algun dato curioso sobre {language}",
+            "dime algun dato curioso sobre {language}",
+            "da me algun dato sobre {language}",
+            "dame algun dato sobre {language}",
+            "da me alguna curiosidad acerca de {language}",
+            "da me una curiosidad acerca de {language}",
+            "Dime alguna curiosidad acerca de {language}",
+            "Dime una curiosidad acerca de {language}",
+            "da me una curiosidad sobre {language}",
+            "da me alguna curiosidad sobre {language}",
+            "Dime alguna curiosidad sobre {language}",
+            "Prueba {language}",
+            "Dime algo sobre {language}",
+            "Me gustaría aprender algo nuevo sobre {language}",
+            "Cuentame algo curioso sobre {language}",
+            "Hablame de alguna curiosidad acerca de {language}",
+            "Quiero saber algo interesante sobre {language}",
+            "Puedes compartir una curiosidad relacionada con {language} ",
+            "dime una curiosidad sobre {language}"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CustomLanguageIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "language",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.888556007809.530943131934"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.888556007809.530943131934",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "No tengo referencias de ese lenguaje, prueba diciendo dime una curiosidad acerca de javascript"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "11"
+}

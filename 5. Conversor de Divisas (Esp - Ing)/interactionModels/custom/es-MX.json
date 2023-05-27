@@ -1,0 +1,328 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "conversor de divisas",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ConvertirPesosDolaresIntent",
+          "slots": [
+            {
+              "name": "pesos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{pesos}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convierte {pesos} pesos mexicanos a dólares",
+            "Convierte {pesos} peso a dólar",
+            "{pesos} peso a dólares",
+            "{pesos} pesos a dólares",
+            "Cuanto es {pesos} pesos en dólares",
+            "Cuanto son {pesos} pesos en dólares",
+            "Dime cuanto es {pesos} pesos en dólares",
+            "Convierte {pesos} pesos en dólares",
+            "Convierte {pesos} pesos a dólares",
+            "Dime cuanto son {pesos} pesos en dólares"
+          ]
+        },
+        {
+          "name": "ConvertirDolaresPesosIntent",
+          "slots": [
+            {
+              "name": "dolares",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{dolares}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convierte {dolares} dólares a pesos mexicanos",
+            "{dolares} dólares a pesos mexicanos",
+            "{dolares} dólares a pesos",
+            "Cuanto vale {dolares} dólar a pesos mexicanos",
+            "Convierte {dolares} dólar a peso",
+            "Convierte de {dolares} dólares a pesos mexicanos",
+            "Convierte de {dolares} dólares a pesos",
+            "Dime cuantos son {dolares} dólares en pesos mexicanos",
+            "Dime cuanto son {dolares} dólares en pesos",
+            "Convierte {dolares} dólares a pesos"
+          ]
+        },
+        {
+          "name": "ConvertirPesosEurosIntent",
+          "slots": [
+            {
+              "name": "pesos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{pesos}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convierte {pesos} pesos mexicanos a euros",
+            "{pesos} peso a euros",
+            "{pesos} pesos a euros",
+            "Convierte {pesos} peso a euros",
+            "Cuanto vale {pesos} peso en euros",
+            "Cuanto es {pesos} pesos a euros",
+            "dime cuanto son {pesos} pesos en euros",
+            "Cuanto son {pesos} pesos en euros",
+            "Cuanto es {pesos} pesos en euros",
+            "Convierte {pesos} pesos a euros"
+          ]
+        },
+        {
+          "name": "ConvertirEurosPesosIntent",
+          "slots": [
+            {
+              "name": "euros",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{euros}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convierte {euros} euro a pesos",
+            "Convierte {euros} euros a pesos mexicanos",
+            "{euros} euros a pesos mexicanos",
+            "{euros} euro a pesos",
+            "{euros} euros a pesos",
+            "Convierte de {euros} euros a pesos mexicanos",
+            "Convierte de {euros} euros a pesos",
+            "Convierte {euros} euros a pesos",
+            "Convierte {euros} euros en pesos",
+            "Dime cuanto es {euros} euros en pesos",
+            "Cuanto es {euros} euros en pesos mexicanos",
+            "Cuanto es {euros} euros en pesos"
+          ]
+        },
+        {
+          "name": "ConvertirDolaresEurosIntent",
+          "slots": [
+            {
+              "name": "dolares",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{dolares}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convierte {dolares} dólar a euros",
+            "{dolares} dólar a euro",
+            "{dolares} dólares a euros",
+            "Convierte {dolares} dólares en euros",
+            "Convierte {dolares} dólares a euros",
+            "Cuanto son {dolares} dólares a euros",
+            "Cuanto son {dolares} dólares en euros",
+            "Convierte de {dolares} dólares en euros",
+            "Convierte de {dolares} dólares a euros"
+          ]
+        },
+        {
+          "name": "ConvertirEurosDolaresIntent",
+          "slots": [
+            {
+              "name": "euros",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{euros}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convierte {euros} euro a dólares",
+            "{euros} euro a dólar",
+            "{euros} euro a dólares",
+            "{euros} euros a dólares",
+            "Cuanto son {euros} euros en dólares",
+            "Cuanto es {euros} euros en dólares",
+            "Convierte {euros} euros a dólares",
+            "Convierte {euros} euros en dólares",
+            "Convierte de {euros} euros a dólares"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "ConvertirPesosDolaresIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "pesos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.334914366782.845597054589"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirDolaresPesosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "dolares",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.640476759083.130105459739"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirPesosEurosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "pesos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1251585551599.410518474511"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirEurosPesosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "euros",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.510357818476.675424636865"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirDolaresEurosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "dolares",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.777392612040.662432089941"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirEurosDolaresIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "euros",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1043271355953.1620931416395"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.334914366782.845597054589",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Disculpa, no te entendí, intenta decir una cantidad como cuarenta punto sesenta y dos pesos"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1251585551599.410518474511",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Disculpa, no te entendí, intenta decir una cantidad como cuarenta punto sesenta y dos pesos"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.510357818476.675424636865",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Disculpa, no te entendí, intenta decir una cantidad como cuarenta punto sesenta y dos euros"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.777392612040.662432089941",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Disculpa, no te entendí, intenta decir una cantidad como cuarenta punto sesenta y dos dolares"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1043271355953.1620931416395",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Disculpa, no te entendí, intenta decir una cantidad como cuarenta punto sesenta y dos euros"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.640476759083.130105459739",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Disculpa, no te entendí, intenta decir una cantidad como cuarenta punto sesenta y dos dolares"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "8"
+}

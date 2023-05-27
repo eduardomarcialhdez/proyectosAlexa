@@ -1,0 +1,303 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "currency converter",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ConvertirPesosDolaresIntent",
+          "slots": [
+            {
+              "name": "pesos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{pesos}"
+              ]
+            }
+          ],
+          "samples": [
+            "How much is {pesos} pesos in dollars",
+            "How much are {pesos} pesos in dollars",
+            "Tell me how much it is {pesos} pesos in dollars",
+            "Converts {pesos} pesos in dollars",
+            "Converts {pesos} pesos to dollars",
+            "Tell me how much they are {pesos} pesos in dollars"
+          ]
+        },
+        {
+          "name": "ConvertirDolaresPesosIntent",
+          "slots": [
+            {
+              "name": "dolares",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{dolares}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convert from {dolares} dollars to Mexican pesos",
+            "Convert from {dolares} dollars to pesos",
+            "Tell me how many they are {dolares} dollars in Mexican pesos",
+            "Tell me how much are {dolares} dollars in pesos",
+            "Converts {dolares} dollars to pesos"
+          ]
+        },
+        {
+          "name": "ConvertirPesosEurosIntent",
+          "slots": [
+            {
+              "name": "pesos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{pesos}"
+              ]
+            }
+          ],
+          "samples": [
+            "How much is {pesos} pesos to euros",
+            "tell me how much are {pesos} pesos in euros",
+            "How much are {pesos} pesos in euros",
+            "How much is {pesos} pesos in euros",
+            "Convert {pesos} pesos to euros"
+          ]
+        },
+        {
+          "name": "ConvertirEurosPesosIntent",
+          "slots": [
+            {
+              "name": "euros",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{euros}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convert from {euros} euros to Mexican pesos",
+            "Convert from {euros} euros to pesos",
+            "Convert {euros} euros to pesos",
+            "Convert {euros} euros to Mexican pesos",
+            "Tell me how much is {euros} euros in pesos",
+            "How much is {euros} euros in Mexican pesos",
+            "How much is {euros} euros in pesos"
+          ]
+        },
+        {
+          "name": "ConvertirDolaresEurosIntent",
+          "slots": [
+            {
+              "name": "dolares",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{dolares}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convert {dolares} dollars to euros",
+            "Convert {dolares} dollars in euros",
+            "How much are {dolares} dollars to euros",
+            "How much are {dolares} dollars in euros ",
+            "Converts from {dolares} dollars to euros",
+            "Converts from {dolares} dollars in euros"
+          ]
+        },
+        {
+          "name": "ConvertirEurosDolaresIntent",
+          "slots": [
+            {
+              "name": "euros",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{euros}"
+              ]
+            }
+          ],
+          "samples": [
+            "Convert {euros} euros to dollars",
+            "Convert {euros} euros in dollars",
+            "How much are {euros} euros to dollars",
+            "How much are {euros} euros in dollars",
+            "Converts from {euros} euros to dollars",
+            "Converts from {euros} euros in dollars"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "ConvertirPesosDolaresIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "pesos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.62096154093.1227707564722"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirDolaresPesosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "dolares",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1177918449620.309247077081"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirPesosEurosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "pesos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.611470503738.1028410858066"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirEurosPesosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "euros",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.383689782903.49961767257"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirDolaresEurosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "dolares",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.812745559371.1070397852839"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConvertirEurosDolaresIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "euros",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1365632078081.1587591597260"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.62096154093.1227707564722",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry, I didn\u0027t understand you, try saying an amount like forty point sixty-two pesos"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1177918449620.309247077081",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry, I didn\u0027t understand you, try saying an amount like forty point sixty-two dollars"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.611470503738.1028410858066",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry, I didn\u0027t understand you, try saying an amount like forty point sixty-two pesos"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.383689782903.49961767257",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry, I didn\u0027t understand you, try saying an amount like forty point sixty-two euros"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.812745559371.1070397852839",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry, I didn\u0027t understand you, try saying an amount like forty point sixty-two dollars"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1365632078081.1587591597260",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry, I didn\u0027t understand you, try saying an amount like forty point sixty-two euros"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "4"
+}
